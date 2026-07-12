@@ -6,7 +6,6 @@
 <title>Soheil Asadi</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <style>
 *{
@@ -26,7 +25,6 @@ body{
     color:white;
 }
 
-/* neon background */
 .glow1{
     position:absolute;
     width:750px;
@@ -66,7 +64,6 @@ body{
     text-align:center;
 }
 
-/* 👇 EASY CHANGE PROFILE IMAGE */
 .avatar{
     width:95px;
     height:95px;
@@ -76,7 +73,6 @@ body{
     object-fit:cover;
 }
 
-/* name */
 h1{
     font-size:20px;
     letter-spacing:3px;
@@ -84,21 +80,12 @@ h1{
     margin-bottom:6px;
 }
 
-/* editable username style */
 .sub{
     font-size:12px;
     opacity:0.6;
     margin-bottom:12px;
 }
 
-/* phone */
-.phone-text{
-    font-size:13px;
-    opacity:0.8;
-    margin-bottom:14px;
-}
-
-/* buttons */
 a{
     display:flex;
     align-items:center;
@@ -111,7 +98,7 @@ a{
     color:white;
     font-size:13px;
     border:1px solid rgba(255,255,255,0.1);
-    transition:0.25s;
+    transition:.25s;
 }
 
 a:hover{
@@ -119,20 +106,28 @@ a:hover{
     border-color:#a78bfa66;
 }
 
-.phone{background:rgba(124,58,237,0.4);}
-.tg{background:rgba(29,78,216,0.4);}
-.ig{background:rgba(190,24,93,0.4);}
+.phone{background:rgba(124,58,237,.4);}
+.tg{background:rgba(29,78,216,.4);}
+.ig{background:rgba(190,24,93,.4);}
 
 #qrcode{
-    margin-top:16px;
+    margin-top:18px;
     display:flex;
     justify-content:center;
 }
 
+#qrcode img{
+    width:115px;
+    height:115px;
+    border-radius:12px;
+    background:#fff;
+    padding:6px;
+}
+
 .footer{
-    margin-top:10px;
+    margin-top:12px;
     font-size:10px;
-    opacity:0.4;
+    opacity:.4;
     letter-spacing:3px;
 }
 </style>
@@ -145,42 +140,33 @@ a:hover{
 
 <div class="card">
 
-    <!-- 👇 فقط اینو عوض کن برای عکس -->
-    <img class="avatar" src="https://s8.uupload.ir/files/img_3374_b8vu.jpeg">
+<img class="avatar" src="https://s6.uupload.ir/files/photo_5908938460662271594_w_hwdt.jpg">
 
-    <h1>SOHEIL ASADI</h1>
+<h1>SOHEIL ASADI</h1>
 
-    <!-- 👇 username line -->
-    <div class="sub">ُS O H i</div>
+<div class="sub">S O H i</div>
 
-    <a class="phone" href="tel:+989395392610">📞 CALL</a>
+<a class="phone" href="tel:+989395392610">
+📞 CALL
+</a>
 
-    <!-- INSTAGRAM -->
-    <a class="ig" href="https://instagram.com/soheilasadi65" target="_blank">
-        📷 INSTAGRAM
-    </a>
+<a class="ig" href="https://instagram.com/soheilasadi65" target="_blank">
+📷 INSTAGRAM
+</a>
 
-    <!-- TELEGRAM -->
-    <a class="tg" href="https://t.me/Hashem_Khoshchehre" target="_blank">
-        ✈ TELEGRAM
-    </a>
+<a class="tg" href="https://t.me/Hashem_Khoshchehre" target="_blank">
+✈ TELEGRAM
+</a>
 
-    <div id="qrcode"></div>
-
-    <div class="footer">PREMIUM DIGITAL CARD</div>
-
+<div id="qrcode">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=https%3A%2F%2Fsoheilasadi8189-dev.github.io%2Fmy-card1%2F&qzone=1&margin=0&size=400x400&ecc=L" alt="QR Code">
 </div>
 
-<script>
-new QRCode(document.getElementById("qrcode"), {
-    text: window.location.href,
-    width: 115,
-    height: 115,
-    colorDark: "#e0e7ff",
-    colorLight: "transparent",
-    correctLevel: QRCode.CorrectLevel.H
-});
-</script>
+<div class="footer">
+PREMIUM DIGITAL CARD
+</div>
+
+</div>
 
 </body>
 </html>
